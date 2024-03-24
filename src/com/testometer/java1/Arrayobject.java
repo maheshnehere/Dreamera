@@ -29,5 +29,16 @@ public class Arrayobject {
         {
             System.out.println(num);
         }
+
+        boolean [] theory = new boolean[3];
+        theory[0]  = true;
+        for (int j = 1; j < 3; j++) {
+            theory[j] = false;
+        }
+
+        for (int i =0;i< theory.length;i++)
+        {
+            System.out.println(theory[i]);
+        }
     }
 }
