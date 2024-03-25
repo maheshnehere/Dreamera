@@ -30,15 +30,22 @@ public class Arrayobject {
             System.out.println(num);
         }
 
-        boolean [] theory = new boolean[3];
+        boolean [] theory = new boolean[2];
         theory[0]  = true;
-        for (int j = 1; j < 3; j++) {
-            theory[j] = false;
+        theory[1] = false;
+
+        for (boolean b : theory) {
+            System.out.println(b);
         }
 
-        for (int i =0;i< theory.length;i++)
+        float [] currency = new float[3];
+        currency[0]=1.0f;
+        currency[1]=3.4f;
+        currency[2]=5.0f;
+
+        for (int i = 0;i< currency.length;i++)
         {
-            System.out.println(theory[i]);
+            System.out.println(currency[i]);
         }
     }
 }
