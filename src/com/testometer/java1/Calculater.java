@@ -1,19 +1,15 @@
 package com.testometer.java1;
 
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
 public class Calculater {
 
-
     public static void main(String[] args) {
-
-//        Calculater c = new Calculater();
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Select the calculation type to be performed");
-        String value = sc.next();
+        char value = sc.next().charAt(0);
 
         System.out.println("Enter number 1");
         int num1 = sc.nextInt();
@@ -21,8 +17,29 @@ public class Calculater {
         System.out.println("Enter number 2");
         int num2 = sc.nextInt();
 
+        switch (value)
+        {
+            case'+':
+                System.out.println("Total ="+num1+num2);
+                break;
+            case '-':
+                System.out.println("Total ="+(num1-num2));
+                break;
+            case '*':
+                System.out.println("Total ="+num1*num2);
+                break;
+            case '/':
+                System.out.println("Total ="+num1/num2);
+                break;
+            default:
+                System.out.println("Invalid operator");
+        }
 
+
+
+
+        }
 
 
     }
-}
+
